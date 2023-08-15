@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+    let salary = +prompt('Xin vui lòng nhập vào tiền lương theo tháng (tr) :');
+    if (salary <= 5) {
+        alert('Số thuế mà bạn phải nộp là :  ' + salary*0.05 + 'tr VNĐ');
+    } else if (5 < salary && salary <= 10) {
+        alert('Số thuế mà bạn phải nộp là :  ' + salary*0.1 + 'tr VNĐ');
+    } else if (10 < salary && salary <= 18) {
+        alert('Số thuế mà bạn phải nộp là :  ' + salary*0.15 + 'tr VNĐ');
+    } else if (18 < salary && salary <= 32) {
+        alert('Số thuế mà bạn phải nộp là :  ' + salary*0.2 + 'tr VNĐ');
+    } else if (32 < salary && salary <= 52) {
+        alert('Số thuế mà bạn phải nộp là :  ' + salary*0.25 + 'tr VNĐ');
+    } else if (52 < salary && salary <= 80) {
+        alert('Số thuế mà bạn phải nộp là :  ' + salary*0.3 + 'tr VNĐ');
+    } else {
+        alert('Số thuế mà bạn phải nộp là :  ' + salary*0.35 + 'tr VNĐ');
+    }
+</script>
+</body>
+</html>

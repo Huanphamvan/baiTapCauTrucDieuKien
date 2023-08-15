@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
+</head>
+<body>
+<script>
+    let time = +prompt('Xin vui lòng nhập vào thời gian gọi (dv: phút) :');
+    if (time <= 60) {
+        alert('Tiền cước điện thoại của quý khách là :' + time*1200 + 'VNĐ');
+    } else if (60 <= time && time < 150) {
+        alert('Tiền cước điện thoai của quý khách là :' + time*1500 + 'VNĐ');
+    } else {
+        alert('tiền cước điện thoại của quý khách là :' + time*2000 + 'VNĐ');
+    }
+
+</script>
+</body>
+</html>

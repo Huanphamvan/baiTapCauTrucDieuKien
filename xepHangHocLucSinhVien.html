@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực của học sinh</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập vào điểm bài kiểm tra :');
+    let b = +prompt('Nhập vào điểm bài kiểm tra :');
+    let c = +prompt('Nhập vào điểm bài kiểm tra :');
+    let dtb = (a + 2 * b + 7 * c) / 10;
+    if (dtb >= 9) {
+        alert('Học sinh xuất sắc')
+    } else if (8 <= dtb && dtb < 9)
+    {
+        alert('Hoc sinh giởi');
+    }
+    else
+    if (6.5 <= dtb && dtb < 8)
+    {
+        alert('Học sinh khá');
+    }
+    else if (5.5 <= dtb && dtb < 6.5)
+    {
+        alert('Học sinh trung bình');
+    }
+    else
+    {
+        alert('Học sinh yếu');
+    }
+</script>
+</body>
+</html>

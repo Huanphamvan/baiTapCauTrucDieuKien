@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình tính giá điện</title>
+</head>
+<body>
+<script>
+    let kwh = +prompt('Xin vui lòng nhập vào số điện mà gia đình tiêu thụ (kwh)');
+    if (0 < kwh && kwh <50) {
+        alert(' Tiền điện của gia đình là :' + kwh*1678 + 'VNĐ');
+    } else if (51 < kwh && kwh <100) {
+        alert(' Tiền điện của gia đình là :' + kwh*1734 + 'VNĐ');
+    } else if (101 < kwh && kwh <200) {
+        alert(' Tiền điện của gia đình là :' + kwh*2014 + 'VNĐ');
+    } else if (201 < kwh && kwh <300) {
+        alert(' Tiền điện của gia đình là :' + kwh*2536 + 'VNĐ');
+    } else if (301 < kwh && kwh <400) {
+        alert(' Tiền điện của gia đình là :' + kwh*2834 + 'VNĐ');
+    } else {
+        alert(' Tiền điện của gia đình là :' + kwh*2927 + 'VNĐ');
+    }
+</script>
+</body>
+</html>

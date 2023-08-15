@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình tính lãi suất ngân hàng</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Xin vui lòng nhập vào lượng tiền mà bạn muốn gửi (tr) :');
+    let month = +prompt('Xin vui lòng nhập vào số tháng mà bạn muốn gửi (th) :');
+    let lai = +prompt('Xin vui lòng nhập vào lãi suất mà bạn muốn gửi (%) :');
+    let kq = 1+lai;
+    let kq1 = Math.pow(kq,month);
+    let money = a*kq1;
+    let sotienlai = money -a ;
+    document.write('Số tiền lãi của bạn là :' + sotienlai + ' tr.VNĐ' + '  Tổng số tiền cả gốc lẫn lãi mà bạn nhận được là :' + money + 'tr.VNĐ');
+</script>
+</body>
+</html>

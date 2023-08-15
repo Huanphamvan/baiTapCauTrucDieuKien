@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng dựa theo doanh số</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Xin mới nhập doanh số bán hàng (đv triệu đồng):');
+    if (a <= 10) {
+        alert('Hoa hồng bạn nhận được là :' + 0.03*a + 'tr');
+    } else if (10 < a && a <= 50) {
+        alert('Hoa hồng bạn nhận được là :' + 0.1*a + 'tr');
+    } else if (50 < a && a <=100) {
+        alert('Hoa hồng bạn nhận được là :' + 0.15*a +'tr');
+    } else if (a > 100) {
+        alert('Hoa hồng bạn nhận được là :' + 0.2*a +'tr');
+    }
+</script>
+</body>
+</html>
